@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Read - Todo Page</div>
+
+        <script type="text/javascript">
+                      
+            //let myRequest = 'todo.json'
+            let myRequest = 'todo.json'
+
+            fetch(myRequest)
+            .then(function(response) {              
+                  return response.json()               
+            })/*, (reject)=>console.log("rejected")*/
+            .then(function(json) { 
+                console.log(json)
+                for(var i = 0; i < json.length; i++)
+                {
+                 document.body.innerHTML += "Id:\t" + json[i].id + "\tTitle:\t" + json[i].title + ". \tCompleted: " + json[i].completed + "<br/>"
+                }
+            })
+           
+        </script>
+        
+    </body>
+</html>
