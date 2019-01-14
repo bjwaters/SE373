@@ -1,7 +1,3 @@
-//Error check to get todo to todo.json
-//Get the guithub working
-//get the read-todo to read-todo.html working
-
 var http = require('http');
 var url = require('url');
 var fileSystem = require('fs');
@@ -15,7 +11,6 @@ http.createServer(function (request, response) {
     console.log(request.url)
     console.log(".")
 
-    //This one does't work
     if(fileName == "todo")
     {
         console.log("Filename is : " + fileName)
@@ -25,7 +20,6 @@ http.createServer(function (request, response) {
     {
         fileName = "read-todo.html"
     }
-    //This one
     if(fileName == "todo.json")
     {
         console.log("Filename is : " + fileName)
