@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.still, .rotate, .shrink {
+    color: red;
+    display: inline-block;
+    font-size: 60px;
+    padding: 1rem;
+    text-shadow: 1px 1px 2px black; 
+   }
+   
+   .rotate {
+    animation: rotate 1s infinite ease;
+   }
+   
+   .shrink {
+    animation: shrink 1s infinite ease;
+   }
+   
+   @keyframes rotate { 
+    0% { 
+    transform: rotateZ(-30deg);
+    }
+    50% {
+    transform: rotateZ(30deg);
+    }
+    100% {
+    transform: rotateZ(0);
+    }
+   }
+   
+   @keyframes shrink { 
+    0% { 
+    transform: scale(0.8);
+    }
+    50% {
+    transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+   }
