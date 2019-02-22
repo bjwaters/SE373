@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type"text.css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div style=" width:500px; margin: 0 auto; border:1px solid black; padding:10px;">
+    <h2>Update Page</h2>
+
+    <form action="/updateEmployee" method="POST">
+    First Name: <input type = "text" name="updateFName" value={{fname}}><br>
+    Last Name: <input type = "text" name="updateLName" value={{lname}}><br>
+
+    Department:<select name = "updateDept">
+        <option value="Accounting">Accounting</option>
+        <option value="Records">Records</option>
+        <option value="Advertising">Advertising</option>
+    </select><br>
+
+    Start Date:<input type = "text" name="updateSDate" value={{{start}}}><br>
+    Job Title:<input type = "text" name="updateTitle" value={{title}}><br>
+    Salary:<input type = "text" name="updateSalary" value={{salary}}><br>
+    <button type="submit" name="updateMe" value={{myVal}}>Update employee</button>
+    </form>
+    <br>
+    <a href="http://localhost:3000/">Add Employee</a>
+    <a href="http://localhost:3000/view">View All Employees</a>
+    </div>
+</body>
+</html>

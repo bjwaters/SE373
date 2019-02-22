@@ -1,0 +1,33 @@
+Adding works!
+Updating mostly works!
+deletion works!
+listing works!
+
+Create a CRUD (Create, Read, Update and Delete) application using express, hbs, mongo and mongoose.
+
+The Application will be an employee collection under the Empl Database.
+
+The index page will allow you to create a new entry(document with schema values).
+
+Make sure your Schema follows the key names below that are in parenthesis ().
+
+First name (firstName) String
+Last name (lastName) String
+Department (department) String | Drop-down selection (3 minimum)  
+Start Date  (startDate) Date | Input type="date" 
+Job Title  (jobTitle) String
+Salary  (salary) Number
+https://mongoosejs.com/docs/schematypes.html (Links to an external site.)Links to an external site.
+
+Input field entry:
+
+Use HTML 5 fields to make entering data easier with dropdowns etc.
+The view page will allow you to view all the records.  Included in each row should be an action 
+button to update or delete that row. Make sure to display this using a table.
+
+The update page should allow you to update the selected entry.
+
+The Delete page should delete the entry selected and display the message
+on the page with an h2 tag.
+
+Please add navigation to the site to along with CSS to style each and every page.

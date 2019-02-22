@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body{
+    background-color:lightskyblue;
+}
+
+table, th, td{
+    border:1px solid black;
+}
